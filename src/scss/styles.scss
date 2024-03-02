@@ -22,20 +22,20 @@ $dark-bg-subtle: #ECECEC;
     // background-color: rgba(24, 81, 81, 0.659);
     background-image: linear-gradient(to bottom,
             rgb(149 74 185 / 10%),
-            rgb(68 33 85 / 100%)), url('assets/card-cover-gatsby.jpg');
+            rgb(68 33 85 / 100%)), url('/assets/card-cover-gatsby.jpg');
     background-blend-mode: normal;
 }
 
 .service-card-wordpress {
     background-image: linear-gradient(to bottom,
             rgb(47 96 169 / 10%),
-            rgb(27 63 117 / 100%)), url('assets/card-cover-wordpress.jpg');
+            rgb(27 63 117 / 100%)), url('/assets/card-cover-wordpress.jpg');
 }
 
 .service-card-nextjs {
     background-image: linear-gradient(to bottom,
             rgb(78 71 71 / 10%),
-            rgb(38 36 36 / 100%)), url('assets/card-cover-nextjs.jpg');
+            rgb(38 36 36 / 100%)), url('/assets/card-cover-nextjs.jpg');
 }
 
 .banner {
@@ -49,7 +49,7 @@ $dark-bg-subtle: #ECECEC;
 .hero {
     background-image: linear-gradient(to bottom,
             rgba(0, 0, 0, 60%),
-            rgba(0, 0, 0, 60%)), url('assets/hero-image.jpg');
+            rgba(0, 0, 0, 60%)), url('/assets/hero-image.jpg');
     background-size: cover;
     background-position: center;
     min-height: 20rem;
