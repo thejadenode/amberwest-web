@@ -8,7 +8,7 @@ $dark-bg-subtle: #ECECEC;
 
 
 .home-service-card {
-    max-height: 18rem;
+    height: 8rem;
     background-size: cover;
     
     .card-body {
@@ -77,7 +77,7 @@ footer {
 @include media-breakpoint-up(md) {
     .home-service-card {
         max-width: 16rem;
-        height: 24rem;
+        height: 18rem;
         flex: auto;
     }
 
