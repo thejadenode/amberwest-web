@@ -55,11 +55,52 @@ $dark-bg-subtle: #ECECEC;
     min-height: 20rem;
 }
 
+footer {
+    .col-12 {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        border: 2px solid red($color: #000000);
+
+        ul {
+            display: flex;
+            flex-direction: column;
+
+        }
+    }
+
+    background-image: linear-gradient( 90deg,
+            rgba(41 114 146 / 100%),
+            rgba(84 166 200 / 100%));
+}
+
 @include media-breakpoint-up(md) {
     .home-service-card {
         max-width: 16rem;
         height: 24rem;
         flex: auto;
+    }
+
+    footer {
+        .col-12 {
+            max-width: 20rem;
+            display: flex;
+            align-items: center;
+
+            ul {
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                padding: 0;
+                align-self: center;
+                align-content: center;
+
+                li {
+                    width: fit-content;
+                }
+            }
+        }
     }
 }
 
