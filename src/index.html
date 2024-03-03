@@ -6,52 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap w/ Vite</title>
   <script type="module" src="./js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/footer.js"></script>
 </head>
 
 <body>
-  <nav class="navbar sticky-top shadow navbar-expand-sm navbar-light bg-light">
-    <div class="container-sm">
-      <a class="navbar-brand text-primary fw-bold " href="/">
-        <i class="bi bi-palette2 text-primary "></i> 
-        Amber West Digital
-      </a>
-      <div>
-        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNav" aria-controls="offcanvasNav" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="offcanvas offcanvas-end" id="offcanvasNav" tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Links</h5>
-            <button class="btn-close" data-bs-dismiss="offcanvas"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="services.html" aria-current="page">Services
-                  <span class="visually-hidden">Services</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html" aria-current="page">About
-                  <span class="visually-hidden">About</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="careers.html" aria-current="page">Careers
-                  <span class="visually-hidden">Careers</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html" aria-current="page">Contact
-                  <span class="visually-hidden">Contact</span></a>
-              </li>             
-            </ul>
-            <button class="btn-primary bg-primary text-white rounded-1 d-sm-none" onclick="window.scrollTo(0, 0)" data-bs-dismiss="offcanvas">Back to top</button></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
+  <nav></nav>
 
   <section class="container-fluid mb-5 hero p-5 d-flex flex-column justify-content-center">
     <h1 class="text-primary-emphasis">Your own identity, right on the internet.</h1>
@@ -221,42 +182,7 @@
     </form>
   </section>
 
-  <footer class="container-fluid bg-primary p-md-3">
-    <div class="row gy-4 p-5 d-md-flex justify-content-md-center">
-      <div class="col-12 col-md-4">
-        <div>
-          <p class="text-white fw-bolder m-0 fs-2 ">Amber West Digital</p>
-          <small class="text-white">Your own identiy, <br>right on the internet.</small>
-          <div>
-            <i class="bi bi-linkedin text-white-50 "></i>
-            <i class="bi bi-instagram text-white-50"></i>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4">
-        <ul class="list-unstyled text-white">
-          <span class="fw-bold m-0">Services</span>
-          <a href="" class="link-light">GatsbyJs</a>
-          <a href="" class="link-light">Wordpress</a>
-          <a href="" class="link-light">NextJS</a>
-          <a href="" class="link-light">Web Design Consultation</a>
-        </ul>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4">
-        <ul class="list-unstyled text-white">
-          <span class="fw-bold">More from us</span>
-          <a href="" class="link-light">Who are we</a>
-          <a href="" class="link-light">Mission and Vision</a>
-          <a href="" class="link-light">Contact</a>
-          <a href="" class="link-light">Careers</a>
-          <li></li>
-        </ul>
-      </div>
-    </div>
-    <div class="row p-2">
-      <small class="text-white-50 text-center">Amber West Digital, 2024.</small>
-    </div>
-  </footer>
+  <footer></footer>
 </body>
 
 </html>
