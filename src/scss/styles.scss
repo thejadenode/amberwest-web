@@ -32,14 +32,14 @@ $dark-bg-subtle: #ECECEC;
 
 .service-card-wordpress {
     background-image: linear-gradient(to bottom,
-            rgb(47 96 169 / 10%),
+            rgba(47, 96, 169, 0.434),
             rgb(27 63 117 / 100%)), url('/assets/card-cover-wordpress.jpg');
 }
 
 .service-card-nextjs {
     background-image: linear-gradient(to bottom,
-            rgb(78 71 71 / 10%),
-            rgb(38 36 36 / 100%)), url('/assets/card-cover-nextjs.jpg');
+            rgba(59, 55, 55, 0.409),
+            rgb(31, 29, 29)), url('/assets/card-cover-nextjs.jpg');
 }
 
 .banner {
