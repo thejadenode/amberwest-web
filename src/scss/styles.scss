@@ -10,7 +10,7 @@ $dark-bg-subtle: #ECECEC;
 .home-service-card {
     height: 8rem;
     background-size: cover;
-    
+
     .card-body {
         display: flex;
         flex-direction: column;
@@ -73,9 +73,31 @@ footer {
         }
     }
 
-    background-image: linear-gradient( 90deg,
-            rgba(41 114 146 / 100%),
-            rgba(84 166 200 / 100%));
+    background-image: linear-gradient(90deg,
+        rgba(41 114 146 / 100%),
+        rgba(84 166 200 / 100%));
+}
+
+.services-accordion-icon {
+    max-width: 2.5rem;
+}
+
+.services-accordion-chips {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    li {
+        width: 100%;
+        padding: 1rem;
+        background-color: #54A6C8;
+        border-radius: 4px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-align: center;
+    }
 }
 
 @include media-breakpoint-up(md) {
@@ -106,9 +128,21 @@ footer {
             }
         }
     }
+
+    .services-accordion-chips {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            width: 12rem;
+        }
+    }
 }
 
-@include media-breakpoint-down(sm){
+@include media-breakpoint-down(sm) {
     .principles {
         .card {
             padding: 2px;

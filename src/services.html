@@ -15,7 +15,7 @@
 
 <body>
   <nav></nav>
-  <section id="services" class="container-fluid bg-primary mb-5"
+  <section id="servicesAccordionContainer" class="container-fluid bg-primary mb-5"
     style="background-image: linear-gradient( 90deg,rgba(41 114 146 / 100%),rgba(84 166 200 / 100%));">
     <div class="container p-3 p-md-5" style="max-width: 48rem;">
       <div class="row">
@@ -50,6 +50,140 @@
           </div>
         </div>
       </div>
+    </div>
+
+  </section>
+  <section class="container mb-5">
+    <div class="accordion" id="servicesAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="gatsbyHeader">
+          <button class="accordion-button text-primary" type="button" data-bs-toggle="collapse"
+            data-bs-target="#gatsbyAccordion" aria-expanded="true" aria-controls="gatsbyAccordion">
+            <div class="d-flex align-items-center ">
+              <img src="/assets/gatsby-icon-line.svg" class="services-accordion-icon me-2" alt="wordpress icon">
+              <h2 class="text-primary fw-bold m-0">GatsbyJs</h2>
+            </div>
+          </button>
+        </h2>
+        <div id="gatsbyAccordion" class="accordion-collapse collapse show" aria-labelledby="gatsbyHeader"
+          data-bs-parent="#servicesAccordion">
+          <div class="accordion-body">
+            <div class="row">
+              <p class="text-dark">GatsbyJs is an modern and open-source static site generator built on top of Node.js
+                using React and GraphQL.
+                It allows developers to create fast, secure, and SEO-friendly websites with pre-rendered HTML pages.
+                This
+                means your website content is already built and optimized, resulting in lightning fast loading times and
+                a
+                superior user experience.</p>
+            </div>
+            <div class="row">
+              <h3 class="h3 text-primary">When should you choose Gatsby?</h3>
+              <ul class="list-unstyled">
+                <li class="text-dark">1. Websites with primarily static content or pages that do not change often.
+                </li>
+                <li class="text-dark">2. SEO-focused projects: Gatsby excels at SEO due to its static nature.</li>
+                <li class="text-dark">3. Websites where speed loading times is top-priority, potentially boosting
+                  conversion
+                  rates.</li>
+                <li class="text-dark">4. Websites like this one!</li>
+              </ul>
+            </div>
+            <div class="row">
+              <h3 class="text-primary">Use Cases</h3>
+              <ul class="list-unstyled services-accordion-chips">
+                <li>Landing Pages</li>
+                <li>Simple Blogs</li>
+                <li>Portfolios</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="wordpressHeader">
+          <button class="accordion-button text-primary" type="button" data-bs-toggle="collapse"
+            data-bs-target="#wordpressAccordion" aria-expanded="false" aria-controls="wordpressAccordion">
+            <div class="d-flex align-items-center ">
+              <img src="/assets/wordpress-icon-line.svg" class="services-accordion-icon me-2" alt="wordpress icon">
+              <h2 class="text-primary fw-bold m-0">Wordpress</h2>
+            </div>
+          </button>
+        </h2>
+        <div id="wordpressAccordion" class="accordion-collapse collapse" aria-labelledby="wordpressHeader"
+          data-bs-parent="#servicesAccordion">
+          <div class="accordion-body">
+            <div class="row">
+              <p class="text-dark">WordPress is a free and open-source content management system (CMS) that powers over
+                43% of all websites on the internet. It allows users with minimal technical knowledge to create, manage,
+                and modify the content of their websites through a user-friendly backend interface.</p>
+            </div>
+            <div class="row">
+              <h3 class="h3 text-primary">When should you choose Wordpress?</h3>
+              <ul class="list-unstyled">
+                <li class="text-dark">1. Websites with dynamic content: Blogs, e-commerce stores, membership sites,
+                  and
+                  other websites requiring frequent updates and user interactions.</li>
+                <li class="text-dark">2. You want some user-friendly controls: WordPress offers easy drag-and-drop
+                  functionalities and requires no coding knowledge.</li>
+                <li class="text-dark">3. Scalability and flexibility: WordPress can be customized and extended through
+                  themes and plug-ins, allowing it to adapt to various website needs and complexities.</li>
+              </ul>
+            </div>
+            <div class="row">
+              <h3 class="text-primary">Use Cases</h3>
+              <ul class="list-unstyled services-accordion-chips">
+                <li>Active Blogs</li>
+                <li>E-Commerce</li>
+                <li>Members-Only</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="nextjsHeader">
+          <button class="accordion-button text-primary" type="button" data-bs-toggle="collapse"
+            data-bs-target="#nextjsAccordion" aria-expanded="false" aria-controls="nextjsAccordion">
+            <div class="d-flex align-items-center ">
+              <img src="/assets/nextjs-icon-line.svg" class="services-accordion-icon me-2" alt="wordpress icon">
+              <h2 class="text-primary fw-bold m-0">NextJs</h2>
+            </div>
+          </button>
+        </h2>
+        <div id="nextjsAccordion" class="accordion-collapse collapse" aria-labelledby="nextjsHeader"
+          data-bs-parent="#servicesAccordion">
+          <div class="accordion-body">
+            <div class="row">
+              <p class="text-dark">Next.js is a hybrid framework built on top of React that allows you to create
+                performance-optimized and scalable websites and web applications. It combines static site generation
+                (SSG) and server-side rendering (SSR), providing the best of both worlds.</p>
+            </div>
+            <div class="row">
+              <h3 class="h3 text-primary">When should you choose NextJS?</h3>
+              <ul class="list-unstyled">
+                <li class="text-dark">Websites with both static and dynamic content: Blogs, e-commerce stores, and
+                  applications with user interactions, personalized content, or frequent data updates.</li>
+                <li class="text-dark">SEO-focused projects: Next.js offers various built-in features and
+                  functionalities to optimize your website for search engines.</li>
+                <li class="text-dark">Complex and scalable applications: Next.js is well-suited for building
+                  large-scale web applications requiring performance, scalability, and a balance between static and
+                  dynamic functionalities.</li>
+              </ul>
+            </div>
+            <div class="row">
+              <h3 class="text-primary">Use Cases</h3>
+              <ul class="list-unstyled services-accordion-chips">
+                <li>Web Applications</li>
+                <li>Scaling Websites</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
   </section>
