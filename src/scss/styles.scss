@@ -100,6 +100,15 @@ footer {
     }
 }
 
+.services-others-container {
+    li {
+        span {
+            color: $primary;
+            font-weight: bold;
+        }
+    }
+}
+
 @include media-breakpoint-up(md) {
     .home-service-card {
         max-width: 16rem;
@@ -138,6 +147,26 @@ footer {
 
         li {
             width: 12rem;
+        }
+    }
+
+    .services-others-container {
+        li {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 2rem;
+
+            span {
+                text-align: end;
+                color: $primary;
+                font-weight: bold;
+                width: 12rem;
+            }
+
+            p {
+                width: 24rem;
+            }
         }
     }
 }
