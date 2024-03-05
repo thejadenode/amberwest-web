@@ -109,6 +109,12 @@ footer {
     }
 }
 
+.background-grid {
+background-image: radial-gradient(circle at center center, $primary, $primary), repeating-radial-gradient(circle at center center, rgb(232, 248, 255), rgb(255, 255, 255), 10px, transparent 20px, transparent 10px);
+background-blend-mode: multiply;
+    mask-image: radial-gradient(circle, black 10%, rgba(0, 0, 0, .75) 100%);
+}
+
 @include media-breakpoint-up(md) {
     .home-service-card {
         max-width: 16rem;
