@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>About - Amber West Digital</title>
-        <script type="module" src="./js/main.js"></script>
-      </head>
-      <body>
-        {{> navbar}}
-        {{> placeholder}}
-        {{> footer}}
-      </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About - Amber West Digital</title>
+  <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+  {{> navbar}}
+  <section class="container py-5 p-md-5 justify-content-center d-flex">
+    <div class="row" style="max-width: 64rem;">
+      <div class="col">
+        <h1 class="text-dark">We are <strong class="text-primary">Amber West Digital</strong></h1>
+        <div class="clearfix" style="overflow: auto;">
+          <img id="about-who-are-we-banner" src="/assets/who-are-we-banner.webp" class="img-fluid d-none w-100 mt-lg-2 ms-lg-2 d-lg-inline-block float-lg-end "
+            alt="hero image" style=" max-width: 490px;">
+          <p>
+            We are Amber West Digital, a dynamic tech company with offices in Cavite City and Palo Leyte, Philippines.
+            Our passionate team thrives in a collaborative and innovative environment, dedicated to crafting exceptional
+            web solutions for businesses of all sizes.
+          </p>
+          <p>
+            We specialize in web development, utilizing cutting-edge frameworks like GatsbyJS, Next.js, and WordPress to
+            build high-performing and visually stunning websites. We also offer web design expertise and SEO
+            consultation to help your online presence flourish.
+          </p>
+          <p>
+            Whether you have an existing website built with one of our preferred frameworks or are looking to build
+            something new, we're here to help. Our support extends beyond development, ensuring your website remains
+            optimized and achieves its full potential.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{> footer}}
+</body>
+
 </html>
