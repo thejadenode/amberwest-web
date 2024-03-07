@@ -110,6 +110,11 @@ footer {
     }
 }
 
+.about-card {
+    max-width: none;
+    height: 12rem;
+}
+
 .background-grid {
 background-image: radial-gradient(circle at center center, $primary, $primary), repeating-radial-gradient(circle at center center, rgb(232, 248, 255), rgb(255, 255, 255), 10px, transparent 20px, transparent 10px);
 background-blend-mode: multiply;
@@ -175,6 +180,11 @@ background-blend-mode: multiply;
                 width: 24rem;
             }
         }
+    }
+
+    .about-card {
+        max-width: 16rem;
+        height: 20rem;
     }
 }
 
