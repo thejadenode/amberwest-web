@@ -115,6 +115,11 @@ footer {
     height: 12rem;
 }
 
+.about-team-container {
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #3c3c3c2c 10px), 
+    repeating-linear-gradient($primary, #41b4e1);
+}
+
 .about-team-card {
     display: flex;
     flex-direction: column;
@@ -128,8 +133,8 @@ footer {
 }
 
 .background-grid {
-background-image: radial-gradient(circle at center center, $primary, $primary), repeating-radial-gradient(circle at center center, rgb(232, 248, 255), rgb(255, 255, 255), 10px, transparent 20px, transparent 10px);
-background-blend-mode: multiply;
+    background-image: radial-gradient(circle at center center, $primary, $primary), repeating-radial-gradient(circle at center center, rgb(232, 248, 255), rgb(255, 255, 255), 10px, transparent 20px, transparent 10px);
+    background-blend-mode: multiply;
     mask-image: radial-gradient(circle, black 10%, rgba(0, 0, 0, .75) 100%);
 }
 
