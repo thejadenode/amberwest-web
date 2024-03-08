@@ -1,25 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Careers - Amber West Digital</title>
-        <script type="module" src="./js/main.js"></script>
-      </head>
-      <body>
-        {{> navbar}}
-        <section class="container my-5 p-md-5">
-          <div class="row align-items-center d-flex flex-column-reverse flex-md-row gap-4 gap-md-0 ">
-            <div class="col-12 col-md-6">
-              <h1>Join our passionate team</h1>
-              <p>Be part of an environment that values communication and deep-understanding.</p>
-              <button class="btn btn-primary">View job openings below</button>
-            </div>
-            <div class="col-12 col-md-6">
-              <img src="/assets/join-our-team-header.jpg" alt="image of an employee looking at a whiteboard" class="img-fluid">
-            </div>
-          </div>
-        </section>
-        {{> footer}}
-      </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Careers - Amber West Digital</title>
+  <script type="module" src="./js/main.js"></script>
+  <script src="./js/careersPopulator.js"></script>
+</head>
+
+<body>
+  {{> navbar}}
+  <section class="container my-5 p-md-5">
+    <div class="row align-items-center d-flex flex-column-reverse flex-md-row gap-4 gap-md-0 ">
+      <div class="col-12 col-md-6">
+        <h1>Join our passionate team</h1>
+        <p>Be part of an environment that values communication and deep-understanding.</p>
+        <button class="btn btn-primary">View job openings below</button>
+      </div>
+      <div class="col-12 col-md-6">
+        <img src="/assets/join-our-team-header.jpg" alt="image of an employee looking at a whiteboard"
+          class="img-fluid">
+      </div>
+    </div>
+  </section>
+  <section class="container-fluid mb-5 bg-primary-gradient">
+    <div class="container py-5 p-md-5">
+      <div class="row">
+        <h1 class="text-white fw-bold ">Careers</h1>
+      </div>
+      <div class="row">
+        <div class="table-responsive">
+          <table id="careersTable" class="table table-striped table-hover table-borderless table-primary align-middle">
+            <thead class="table-light">
+              <caption class="d-none">
+                Careers
+              </caption>
+              <tr class="text-center">
+                <th>Job Title</th>
+                <th>Availability</th>
+                <th>Link</th>
+              </tr>
+            </thead>
+            <tbody id="careersTableBody" class="table-group-divider">
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  {{> footer}}
+</body>
+
 </html>
