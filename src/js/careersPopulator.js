@@ -1,6 +1,6 @@
 // Define the lists of words for each part of the title
-const higherAdjectives = ["Senior", "Lead", "Head", "Chief"];
-const lowerAdjectives = ["Junior", "Associate", "Assistant"];
+const higherAdjectives = ["","Senior", "Lead", "Head", "Chief"];
+const lowerAdjectives = ["","Junior", "Associate", "Assistant"];
 const fields = ["Web", "Software", "Marketing", "Data", "Business", "SEO", "UI", "UX", "Project"];
 const workloads = ["Developer", "Designer", "Specialist", "Engineer", "Analyst", "Manager", "Intern", "Support", "Technician"];
 
@@ -12,8 +12,8 @@ function getRandomElement(list) {
 // Function to generate a random job title
 function generateJobTitle() {
     // Choose random elements from each list
-    const higherAdj = getRandomElement(higherAdjectives) || ""; // Allow empty higherAdj
-    const lowerAdj = getRandomElement(lowerAdjectives) || ""; // Allow empty lowerAdj
+    const higherAdj = getRandomElement(higherAdjectives); // Allow empty higherAdj
+    const lowerAdj = getRandomElement(lowerAdjectives); // Allow empty lowerAdj
     const field = getRandomElement(fields);
     const workload = getRandomElement(workloads);
 
