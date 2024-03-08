@@ -17,6 +17,7 @@ export default {
         about: resolve(__dirname, 'src/about.html'),
         careers: resolve(__dirname, 'src/careers.html'),
         contact: resolve(__dirname, 'src/contact.html'),
+        google49fd36799f3f3335: resolve(__dirname, 'src/google49fd36799f3f3335.html'),
       },
     },
   },
